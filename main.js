@@ -67,11 +67,12 @@ do {
             break;
         case '3':
             let eta = parseInt(prompt("inserisci eta"));
-            if (eta >= etaMinima) {
+            if (eta >= etaMinima && eta < 150) {
                 console.log("hai scelto la birra");
-            } else {
+            }else if ( eta < etaMinima ){
                 console.log("non hai 18 anni")
-
+            }else if( eta > 150){
+                console.log("non dovresti essere morto?")
             }
             break;
         default:
